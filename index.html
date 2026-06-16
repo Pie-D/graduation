@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thiệp mời tốt nghiệp</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            background: #f5f5f5;
+            font-family: "Montserrat", sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        .card {
+            width: 100%;
+            max-width: 420px;
+            background: #fff;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+        }
+
+        .hero {
+            position: relative;
+            padding: 24px;
+        }
+
+        .hero-text {
+            text-align: center;
+            font-family: "Cormorant Garamond", serif;
+            font-size: 18px;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+            color: #444;
+        }
+
+        .photo-wrapper {
+            position: relative;
+            overflow: hidden;
+            border-radius: 28px;
+        }
+
+        .photo-wrapper img {
+            width: 100%;
+            display: block;
+            object-fit: cover;
+        }
+
+        .photo-wrapper::after {
+            content: "";
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            width: 100%;
+            height: 90px;
+            background: white;
+            clip-path: polygon(0 45%, 100% 100%, 0 100%);
+        }
+
+        .content {
+            padding: 10px 32px 40px;
+            text-align: center;
+        }
+
+        .title {
+            font-family: "Cormorant Garamond", serif;
+            font-size: 42px;
+            font-weight: 600;
+            color: #222;
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            font-family: "Cormorant Garamond", serif;
+            font-size: 18px;
+            letter-spacing: 2px;
+            color: #666;
+            margin-bottom: 16px;
+        }
+
+        .name {
+            font-family: "Great Vibes", cursive;
+            font-size: 52px;
+            color: #222;
+            margin-bottom: 20px;
+        }
+
+        .school {
+            font-family: "Cormorant Garamond", serif;
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+
+        .major {
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .info-box {
+            background: #faf7f2;
+            border-radius: 18px;
+            padding: 18px;
+            margin-bottom: 20px;
+        }
+
+        .info-item {
+            margin-bottom: 14px;
+        }
+
+        .info-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .label {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #888;
+            margin-bottom: 4px;
+        }
+
+        .value {
+            font-size: 15px;
+            color: #222;
+        }
+
+        .message {
+            font-style: italic;
+            color: #666;
+            line-height: 1.7;
+            margin-bottom: 28px;
+        }
+
+        .rsvp-btn {
+            display: inline-block;
+            padding: 14px 28px;
+            background: #222;
+            color: white;
+            text-decoration: none;
+            border-radius: 999px;
+            transition: 0.3s;
+        }
+
+        .rsvp-btn:hover {
+            background: #444;
+        }
+
+        .footer {
+            margin-top: 28px;
+            font-size: 13px;
+            color: #888;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="card">
+
+    <div class="hero">
+        <div class="photo-wrapper">
+            <img src="./images/anh.jpg" alt="Ảnh tốt nghiệp">
+        </div>
+    </div>
+
+    <div class="content">
+
+        <h1 class="title">GRADUATION PARTY</h1>
+
+        <div class="subtitle">IN HONOR OF</div>
+
+        <div class="name">Phạm Hiểu Phương</div>
+
+        <div class="school">ĐẠI HỌC THƯƠNG MẠI</div>
+
+        <div class="major">
+            Khoa Kế Toán – Kiểm Toán
+        </div>
+
+        <div class="info-box">
+
+            <div class="info-item">
+                <div class="label">Thời gian</div>
+                <div class="value">
+                    9:00 – 12:00 | Thứ Hai, 22/06/2026
+                </div>
+            </div>
+
+            <div class="info-item">
+                <div class="label">Địa điểm</div>
+                <div class="value">
+                    Hội trường A – Đại học Thương Mại<br>
+                    79 Hồ Tùng Mậu, Cầu Giấy, Hà Nội
+                </div>
+            </div>
+
+        </div>
+
+        <div class="message">
+            Sự hiện diện của bạn sẽ là món quà ý nghĩa nhất
+            trong ngày đặc biệt này.
+            Rất mong được gặp bạn!
+        </div>
+
+        <a href="https://maps.app.goo.gl/VKH2CvnodEuvwdiC9" class="rsvp-btn">
+            Xác nhận tham dự
+        </a>
+
+        <div class="footer">
+            Liên hệ: 09xx xxx xxx<br>
+            Facebook: fb.com/phamhieuphuong
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
